@@ -78,7 +78,7 @@ class Loader(core.SimpleLoader):
             data = self.parse(ifn, pdb)
             os.remove(ifn)
             return data
-        # I'm not sure whether we need to change any of these    
+        # I'm not sure whether we need to change any of these.     
         elif status == 2:
             raise core.Skip('PDB file %s has no nucleotides' % pdb)
         elif status == 3:
